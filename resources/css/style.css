@@ -2,6 +2,22 @@
 
 html {
   font-size: 16px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.button {
+  font-size: 1.2rem;
 }
 
 /* Header Styles */
@@ -27,10 +43,76 @@ header {
   align-items: center;
 }
 
+.logo img {
+  height: 2rem;
+  width: auto;
+  /* width: 2rem; */
+}
+
+.logo span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.logo span:nth-child(2){
+  font-weight: bold;
+}
+
+.logo span:nth-child(3){
+  color: grey;
+}
+
 .menu {
   display: flex;
 }
 
 .menu li {
   margin-left: 1rem;
+}
+
+/* Content Styling */
+
+/* 1. Main Banner Styles */
+
+.content {
+  padding-top: 4rem;
+  width: 100%;
+}
+
+/* 1. Main Banner Styles */
+
+.banner {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.banner_img {
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+.banner .banner_img img{
+  width: 100%;
+  height: auto;
+  /* overflow: hidden; */
+}
+
+.call_action {
+  width: 30%;
+  margin: auto 0;
+}
+
+.call_action h3 {
+  margin: 2rem 0 3rem 0;;
+}
+
+
+.button {
+  text-align: center;
+  width: 100%;
+  background-color: dimgrey;
+  padding: 0.5rem 0;
 }
