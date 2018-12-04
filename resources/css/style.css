@@ -40,6 +40,7 @@ h3 {
 img {
   width: 100%;
   height: auto;
+  /* overflow: hidden; */
 }
 
 .banner_img {
@@ -49,6 +50,13 @@ img {
 
 video {
   width: 100%;
+}
+
+@media only screen and (max-width: 625px) {
+  .banner_img {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 
@@ -76,9 +84,9 @@ header {
 }
 
 .logo img {
-  height: 2rem;
-  width: auto;
-  /* width: 2rem; */
+  /* height: 2rem; */
+  /* width: auto; */
+  width: 2rem;
 }
 
 .logo span {
@@ -88,18 +96,41 @@ header {
 
 .logo span:nth-child(2){
   font-weight: bold;
+  color: dimgrey;
 }
 
 .logo span:nth-child(3){
   color: grey;
 }
 
-.menu {
+.menu ul{
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.menu li {
+.menu ul li {
   margin-left: 1rem;
+}
+
+.head .mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 625px) {
+  .logo {
+    display: none;
+  }
+  .head .desktop {
+    display: none
+  }
+  .head .mobile {
+    width: 100%;
+    display: block;
+  }
+  .head .mobile li img {
+    width: 2rem;
+  }
 }
 
 /* Content Styling */
@@ -141,6 +172,21 @@ header {
   padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 625px) {
+  .banner {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+  .call_action {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .call_action h3 {
+    margin: 2rem 0 1.5rem 0;
+  }
+}
+
 
 /* 2. Info Section Styles */
 
@@ -148,10 +194,6 @@ header {
   position: relative;
   display: flex;
   padding: 2rem 0;
-}
-
-.info .banner_img {
-  /* border-right: 0.1rem solid lightgrey; */
 }
 
 .info .banner_img h2 {
@@ -181,13 +223,16 @@ header {
   border-bottom:0.1rem solid lightgrey;
 }
 
+.tile .mobile {
+  display: none;
+}
+
 .tile:hover {
   background-color: lightgrey;
 }
 
 .tile .tile_img {
   box-sizing: content-box;
-  /* margin: 1rem 1rem; */
   padding: 1rem 1rem;
   width: 35%;
 }
@@ -203,6 +248,39 @@ header {
   margin-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 625px) {
+  .info {
+    padding: 0 1rem 2rem 1rem;
+  }
+  .info .banner_img {
+    display: none;
+  }
+  .info_tiles {
+    width: 100%;
+  }
+  .tile {
+    display: block;
+    border: none;
+  }
+  .tile .desktop {
+    display: none;
+  }
+  .tile .mobile {
+    display: block;
+  }
+  .tile:hover {
+    background-color: none;
+  }
+  .tile .tile_img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .tile .words {
+    padding: 0 1rem;
+  }
+}
+
 
 /* 3. Courses Section Styles */
 
@@ -216,11 +294,16 @@ header {
   margin-bottom: 2rem;
 }
 
+.courses .mobile {
+  display: none;
+}
+
 .subjects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 
 .topic {
   width: 32%;
@@ -235,6 +318,32 @@ header {
 
 .topic h3 {
   margin: 1rem 1rem;
+}
+
+@media only screen and (max-width:625px) {
+  .courses {
+    padding: 2rem 1rem;
+    background-color: white;
+    border-top: 0.05rem solid lightgrey;
+    border-bottom: 0.05rem solid lightgrey;
+  }
+  .courses .desktop {
+    display: none;
+  }
+  .courses .mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .topic {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  .topic h3 {
+    margin: 1.5rem 1rem;
+  }
 }
 
 
@@ -252,6 +361,10 @@ header {
   display: flex;
 }
 
+.exhibit .mobile {
+  display: none;
+}
+
 .video_thesis{
   width: 60%;
   padding: 0 1.5rem;
@@ -259,6 +372,18 @@ header {
 
 .video_thesis h3 {
   margin: 1.5rem 0 0.5rem 0;
+}
+
+@media only screen and (max-width: 625px) {
+  .exhibit .desktop {
+    display: none;
+  }
+  .exhibit .mobile {
+    display: block;
+  }
+  .exhibit {
+    padding: 2rem 0 1.5rem 0;
+  }
 }
 
 
@@ -269,4 +394,14 @@ footer {
   justify-content: space-between;
   padding: 1rem 1.5rem 3rem 2.5rem;
   border-top: 0.1rem solid lightgrey;
+}
+
+@media only screen and (max-width: 625px) {
+  footer .privacy {
+    display: none;
+  }
+  footer {
+    padding: 1.5rem;
+    border: none;
+  }
 }

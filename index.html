@@ -16,12 +16,20 @@
           <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo">
           <span>Colmar</span><span>Academy</span>
         </div>
-        <nav>
-          <ul class="menu">
+        <nav class="menu desktop">
+          <ul>
             <li><a href="#">On campus</a></li>
             <li><a href="#">Online</a></li>
             <li><a href="#">For companies</a></li>
             <li><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+        <nav class="menu mobile">
+          <ul>
+            <li><img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo"></li>
+            <li><a href="#"><img src="resources/images/ic-on-campus.svg" alt="On Campus Button"></a></li>
+            <li><a href="#"><img src="resources/images/ic-online.svg" alt="Online Button"></a></li>
+            <li><a href="#"><img src="resources/images/ic-login.svg" alt="Login Button"></a></li>
           </ul>
         </nav>
       </div>
@@ -58,8 +66,11 @@
         </div>
         <div class="info_tiles">
           <div class="tile">
-            <div class="tile_img">
+            <div class="tile_img desktop">
               <img src="resources/images/information-orientation.jpg" alt="Students Walking Accross Campus">
+            </div>
+            <div class="tile_img mobile">
+              <img src="resources/images/information-orientation-mobile.jpg" alt="Students Walking Accross Campus">
             </div>
             <div class="words">
               <h3>Orientation date</h3>
@@ -68,8 +79,11 @@
             </div>
           </div>
           <div class="tile">
-            <div class="tile_img">
+            <div class="tile_img desktop">
               <img src="resources/images/information-campus.jpg" alt="Study Room">
+            </div>
+            <div class="tile_img mobile">
+              <img src="resources/images/information-campus-mobile.jpg" alt="Study Room">
             </div>
             <div class="words">
               <h3>Our campus</h3>
@@ -78,8 +92,11 @@
             </div>
           </div>
           <div class="tile">
-            <div class="tile_img">
+            <div class="tile_img desktop">
               <img src="resources/images/information-guest-lecture.jpg" alt="Photo of Oliver Sack">
+            </div>
+            <div class="tile_img mobile">
+              <img src="resources/images/information-guest-lecture-mobile.jpg" alt="Photo of Oliver Sack">
             </div>
             <div class="words">
               <h3>Our guest lecture</h3>
@@ -93,7 +110,7 @@
       <!-- Learning Subjects and Courses Section -->
       <div class="courses">
         <h2>Start learning</h2>
-        <div class="subjects">
+        <div class="subjects desktop">
           <div class="topic">
             <img src="resources/images/course-software.jpg" alt="Computer Screen">
             <h3>Software Engineering</h3>
@@ -131,12 +148,36 @@
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
+        <div class="subjects mobile">
+          <div class="topic">
+            <h3>Software Engineering</h3>
+          </div>
+          <div class="topic">
+            <h3>Computer Art</h3>
+          </div>
+          <div class="topic">
+            <h3>Design</h3>
+          </div>
+          <div class="topic">
+            <h3>Data</h3>
+          </div>
+          <div class="topic">
+            <h3>Business</h3>
+          </div>
+          <div class="topic">
+            <h3>Marketing</h3>
+          </div>
+        </div>
       </div>
 
       <!-- Thesis Exhibit Section -->
       <div class="exhibit">
-        <h2>Thesis exhibit</h2>
-        <div class="exhibit_content">
+        <h2 class="desktop">Thesis exhibits</h2>
+        <h2 class="mobile">Thesis exhibit</h2>
+        <div class="exhibit_content mobile">
+          <video src="resources/videos/thesis.mp4" autoplay controls></video>
+        </div>
+        <div class="exhibit_content desktop">
           <div class="video_thesis">
             <video src="resources/videos/thesis.mp4" autoplay controls></video>
             <h3>Reimagine urban</h3>
